@@ -1,0 +1,31 @@
+
+<!-- Anasayfa Fotografi -->
+<div class="jumbotron">
+  <img src="images/jumbotron_768.jpg" alt="Picture of cafe" class="img-responsive visible-xs">
+</div>
+
+<!-- Anasayfadaki Kategoriler-->
+<div id="home-tiles" class="row">
+
+  <!-- Menu sayfasini yukler-->
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <a href="#" onclick="$dc.loadMenuCategories();"><div id="menu-tile"><span>menü</span></div></a>
+  </div>
+
+  <!-- Menunun icindeki firindan kategorisini yukler -->
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <a href="#" onclick="$dc.loadMenuItems('G');">
+      <div id="specials-tile"><span>fırından</span></div>
+    </a>
+  </div>
+
+  <!-- Subelerimiz sayfasini yukler-->
+  <div class="col-md-4 col-sm-12 col-xs-12">
+    <a href="#" onclick="$dc.loadLocations('G');">
+      <div id="map-tile">
+        <span>Şubelerimiz</span>
+      </div>
+    </a>
+  </div>
+
+</div><!-- End of #home-tiles -->

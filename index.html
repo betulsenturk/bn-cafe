@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>B&N CÁFE</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>B&N CÁFE</h1></a>  
+          </div>
+
+          <!-- Kucuk ekranlarda collapsed menunun iconu -->
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+            <!-- Anasayfa Butonu -->
+            <li id="navHomeButton" class="visible-xs">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            
+            <!-- Menu Butonu -->
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menü</a>
+            </li>
+
+            <!-- Hakkimizda Butonu -->
+            <li>
+              <a href="#" onclick="$dc.loadAbout();" id="hakkimizda">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Hakkımızda</a>
+            </li>
+
+            <!-- Subelerimiz Butonu -->
+            <li>
+              <a href="#" onclick="$dc.loadLocations();">
+                <span class="glyphicon glyphicon-map-marker"></span><br class="hidden-xs"> Şubelerimiz</a>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Baska sayfalara gecildiginde degisiklik olacak kisim -->
+  <div id="main-content" class="container"></div>
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Calisma Saatleri -->
+        <section id="hours" class="col-sm-6">
+          <span>Çalışma Saatleri:</span><br>
+          Pazartesi-Perşembe: 09:15 - 22:00<br>
+          Cuma: 09:15 - 00:00<br>
+          Cumartesi Kapalı
+          <hr class="visible-xs">
+        </section>
+
+        <!-- Ana Sube Adresi -->
+        <section id="address" class="col-sm-6">
+          <span>Ana Şube Adresi:</span><br>
+          Bostanlı, Girne Blv No:7/A,<br> 35590 Karşıyaka/İzmir
+          <hr class="visible-xs">
+        </section>
+
+      </div>
+
+      <div class="text-center">&copy; Copyright B&N CÁFE 2022</div>
+      
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

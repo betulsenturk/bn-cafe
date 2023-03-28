@@ -1,0 +1,37 @@
+
+<!-- Menu itemlari -->
+<div class="menu-item-tile col-md-6">
+  <div class="row">
+
+    <div class="col-sm-5">
+
+      <!-- Menu itemlearinin fotograflari -->
+      <div class="menu-item-photo">
+
+        <!-- Fotografin sag alt kosesindeki short_name -->
+        <div>{{short_name}}</div>
+        <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg" alt="Item">
+
+      </div>
+
+      <!-- Fotograflarin altinda bulunan fiyat ve porsiyonlar -->
+      <div class="menu-item-price">
+        {{price_small}}<span> {{small_portion_name}}</span> {{price_large}} <span>{{large_portion_name}}</span>
+      </div>
+
+    </div>
+
+    <div class="menu-item-description col-sm-7">
+
+      <!-- Menu itemlarin isimleri -->
+      <h3 class="menu-item-title">{{name}}</h3>
+
+      <!-- Menu itemalrin aciklamalari -->
+      <p class="menu-item-details">{{description}}</p>
+    </div>
+
+  </div>
+
+  <!-- Kucuk ekranlarda menu item aralarina cizgi ceker -->
+  <hr class="visible-xs">
+</div>
